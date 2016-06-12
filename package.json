@@ -1,0 +1,53 @@
+{
+  "name": "edn-example",
+  "displayName": "白鹭开发者中心",
+  "description": "展示edn.egret.com的相关示例",
+  "version": "0.0.5",
+  "publisher": "yangxiao",
+  "engines": {
+    "wing": "^3.0.6"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "images/icon.svg",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egret-labs/wing-extensions.git"
+  },
+  "license": "MIT",
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "edn.example",
+        "title": "示例库"
+      }
+    ],
+    "views": [
+      {
+        "type": "utility",
+        "icon": "images/icon.svg", 
+        "title": "示例库",
+        "url": "./web/index.html",
+        "id": "edn_egret_com_example"
+      }
+    ]
+  },
+  "scripts": {
+    "wing:prepublish": "node ./node_modules/egretwing/bin/compile",
+    "compile": "node ./node_modules/egretwing/bin/compile -watch -p ./src",
+    "postinstall": "node ./node_modules/egretwing/bin/install"
+  },
+  "devDependencies": {
+    "egretwing": "^3.0.4",
+    "typescript": "^1.7.5"
+  },
+  "dependencies": {
+    "request": "^2.72.0",
+    "unzip": "^0.1.11"
+  }
+}

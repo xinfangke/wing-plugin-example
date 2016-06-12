@@ -1,0 +1,60 @@
+<html>
+
+<head>
+	 <meta charset="utf-8">
+	<style>
+		.monaca-shell {
+			margin: 8px;
+		}
+		
+		.center {
+			display: flex;
+			flex-flow: column;
+			width: 100%;
+		}
+		
+		.center div {
+			text-align: center;
+		}
+		
+		.treelist{
+			font-size: 16px;
+		}
+		
+		.ui-easytree li{
+			cursor: pointer;
+			line-height: 1.6rem;
+		}
+		span.easytree-title:hover {
+			color: #ffffff;
+		}
+		ul{
+			 outline: none;
+		}
+		.endlogo img{
+			width: 270px;
+			margin-top: 15px;
+		}
+		.title{
+			margin-top: 10px;
+		}
+	</style>
+	<link href="./images/ui.easytree.css" />
+
+</head>
+
+<body>
+	<div class='center'>
+		<div class="endlogo"><img src="./images/ednlogo.png" /></div>
+		<div class="title">点击创建示例项目</div>
+	</div>
+	<div class="treelist">
+
+	</div>
+	<!-- <input type="button" value="OpenDevTools" onclick="openDevTools();" /> -->
+</body>
+<script src="./images/jquery.min.js"></script>
+<script src="./images/jquery-migrate.min.js"></script>
+<script src="./images/jquery.easytree.min.js"></script>
+<script src="./webview.js"></script>
+</html>

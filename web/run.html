@@ -1,0 +1,55 @@
+<html>
+
+<head>
+	 <meta charset="utf-8">
+	<style>
+		#popiframe{
+			width: 359px;
+			height: 539px;
+			border: 0px;
+			background-color: #3A3535;
+		}
+		#downzipButton{
+			position: absolute;
+			text-align: center;
+			width: 100%;
+			bottom: 10px;
+			font-size: 18px;
+			color: #ffffff;
+			text-decoration: blink;
+			cursor:  pointer;
+			background: #0e639c;
+			border: 0px;
+		}
+		.popalert {
+			display: none;
+			flex-flow: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			background: rgba(105, 105, 105, 0.76);
+			color: #000000;
+			font-size: 24px;
+		}
+		::-webkit-scrollbar {
+			width: 0px;
+			height: 0px
+		}
+	</style>
+	<link href="./images/ui.easytree.css" />
+
+</head>
+
+<body>
+	<iframe id="popiframe" allowfullscreen="true"  src=""></iframe>
+	<button id="downzipButton" href="" >打开项目</button>
+	<div class="popalert"><img src="./images/loading.gif" /></div>
+</body>
+<script src="./images/jquery.min.js"></script>
+<script src="./images/jquery-migrate.min.js"></script>
+<script src="./images/jquery.easytree.min.js"></script>
+<script src="./webviewrun.js"></script>
+</html>
